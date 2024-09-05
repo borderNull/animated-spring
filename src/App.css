@@ -1,0 +1,159 @@
+/* #root {
+
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+
+  width: 100%;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.animated_wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.animated_div {
+  width: calc(20vw - 20px);
+  height: calc(20vw - 20px);
+  background-color: aquamarine;
+}
+
+.container {
+
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 20vw;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.list-item {
+  width: 20vw;
+  height: 20vw;
+  flex-shrink: 0;
+
+  will-change: transform;
+
+}
+
+.list-item.shift {
+  animation: shiftIn 0.5s ease;
+}
+
+.list-item.entering {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes shiftIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.list-item.removing {
+  animation: slideOut 1s ease forwards;
+
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+} */
+
+#root {
+  width: 100%;
+}
+
+/* App.css */
+
+.buttons {
+  margin: 20px 0 20px;
+  text-align: center;
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: hover 0.3s;
+}
+.button:hover {
+  border-color: #646cff;
+}
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button:active {
+  background-color: #313131;
+}
+
+.transitions-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* transition: transform 0.5s ease; */
+}
+
+.transitions-item {
+  width: 20vw;
+  height: 20vw;
+  flex-shrink: 0;
+  flex-basis: 20vw;
+  will-change: transform;
+  transition: left 1s;
+  /* display: inline-block; */
+  /* transition: transform 0.3s; */
+  position: absolute;
+}
